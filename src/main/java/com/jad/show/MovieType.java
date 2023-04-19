@@ -2,8 +2,8 @@ package com.jad.show;
 
 public enum MovieType {
     ACTION("Action"),
-    ADVENTURE("Adenture"),
-    COMEDY("Comedie"),
+    ADVENTURE("Aventure"),
+    COMEDY("Comédie"),
     DRAMA("Drame"),
     FANTASY("Fantastique"),
     HORROR("Horreur"),
