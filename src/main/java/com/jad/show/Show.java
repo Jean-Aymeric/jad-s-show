@@ -1,6 +1,6 @@
 package com.jad.show;
 
-public abstract class Show implements IShow{
+abstract class Show implements IShow {
     private final String name;
     private final String description;
     private final ShowType showType;
