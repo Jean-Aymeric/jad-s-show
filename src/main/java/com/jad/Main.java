@@ -12,12 +12,12 @@ public final class Main {
         final ISpectator jad = new Spectator("Jean-Aymeric", "Diet");
 
         final List<IShow> shows = new ArrayList<>();
-        shows.add(new MovieShow("Titre du film",
+        shows.add(new MovieShow("Dune 2",
                 "Description du film",
-                "Nom du réalisateur",
+                "Ridley Scott",
                 "2023",
                 MovieType.SCIENCE_FICTION));
-        shows.add(new TheaterShow("Titre du spectacle de théâtre",
+        shows.add(new TheaterShow("QQQQ",
                 "Description du spectacle de théâtre",
                 "Nom du metteur en scène",
                 "Nom de l'acteur 1",

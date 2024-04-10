@@ -1,10 +1,13 @@
 package com.jad.show;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+@Slf4j
 public class StreetShow extends Show {
     private final ArrayList<String> performers = new ArrayList<>();
 
@@ -15,5 +18,10 @@ public class StreetShow extends Show {
 
     public List<String> getPerformers() {
         return Collections.unmodifiableList(this.performers);
+    }
+
+    @Override
+    public void present() {
+        log.info("J'ai assisté au spectacle de rue "+this.getName()+" Il y avait : "+String.join(", ",getPerformers()));
     }
 }

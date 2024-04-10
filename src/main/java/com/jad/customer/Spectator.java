@@ -23,6 +23,6 @@ public class Spectator implements ISpectator {
 
     @Override
     public void watch(final IShow show) {
-        // TODO: Implement this method
+        show.present();
     }
 }

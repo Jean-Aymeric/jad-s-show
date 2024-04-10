@@ -1,6 +1,10 @@
 package com.jad.show;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class MovieShow extends Show {
+
     private final String director;
     private final String yearOfRelease;
     private final MovieType movieType;
@@ -22,5 +26,9 @@ public class MovieShow extends Show {
 
     public MovieType getMovieType() {
         return this.movieType;
+    }
+
+    public void present() {
+        log.info("J'ai assisté au film " + this.getName() + " de " + this.getDirector() + " sorti en " + this.getYearOfRelease());
     }
 }
