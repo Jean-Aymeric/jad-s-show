@@ -1,11 +1,14 @@
 package com.jad.show;
 
-public abstract class Show implements IShow{
+import com.jad.customer.ISpectator;
+
+public abstract class Show implements IShow {
+
     private final String name;
     private final String description;
     private final ShowType showType;
 
-    public Show(final String name, final String description, final ShowType showType) {
+    protected Show(final String name, final String description, final ShowType showType) {
         this.name = name;
         this.description = description;
         this.showType = showType;
@@ -24,5 +27,10 @@ public abstract class Show implements IShow{
     @Override
     public ShowType getShowType() {
         return this.showType;
+    }
+
+    @Override
+    public void accept(ISpectator spectator) {
+        spectator.watch(this);
     }
 }
