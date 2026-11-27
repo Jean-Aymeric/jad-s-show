@@ -1,4 +1,6 @@
-package com.jad.show;
+package com.jad.show.interfaces;
+
+import com.jad.show.ShowType;
 
 public interface IShow {
     String getName();

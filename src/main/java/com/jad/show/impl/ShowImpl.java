@@ -1,11 +1,14 @@
-package com.jad.show;
+package com.jad.show.impl;
 
-public abstract class Show implements IShow{
+import com.jad.show.interfaces.IShow;
+import com.jad.show.ShowType;
+
+public abstract class ShowImpl implements IShow {
     private final String name;
     private final String description;
     private final ShowType showType;
 
-    public Show(final String name, final String description, final ShowType showType) {
+    protected ShowImpl(final String name, final String description, final ShowType showType) {
         this.name = name;
         this.description = description;
         this.showType = showType;

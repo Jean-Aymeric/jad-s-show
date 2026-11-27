@@ -1,12 +1,13 @@
-package com.jad.customer;
+package com.jad.customer.impl;
 
-import com.jad.show.IShow;
+import com.jad.customer.interfaces.ISpectator;
+import com.jad.show.interfaces.IShow;
 
-public class Spectator implements ISpectator {
+public class SpectatorImpl implements ISpectator {
     private final String firstName;
     private final String lastName;
 
-    public Spectator(final String firstName, final String lastName) {
+    public SpectatorImpl(final String firstName, final String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }

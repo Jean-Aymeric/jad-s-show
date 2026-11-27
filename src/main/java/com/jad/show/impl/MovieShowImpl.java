@@ -1,11 +1,14 @@
-package com.jad.show;
+package com.jad.show.impl;
 
-public class MovieShow extends Show {
+import com.jad.show.MovieType;
+import com.jad.show.ShowType;
+
+public class MovieShowImpl extends ShowImpl {
     private final String director;
     private final String yearOfRelease;
     private final MovieType movieType;
 
-    public MovieShow(final String name, final String description, final String director, final String yearOfRelease, final MovieType movieType) {
+    public MovieShowImpl(final String name, final String description, final String director, final String yearOfRelease, final MovieType movieType) {
         super(name, description, ShowType.MOVIE);
         this.director = director;
         this.yearOfRelease = yearOfRelease;

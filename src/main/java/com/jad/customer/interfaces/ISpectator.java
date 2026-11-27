@@ -1,6 +1,6 @@
-package com.jad.customer;
+package com.jad.customer.interfaces;
 
-import com.jad.show.IShow;
+import com.jad.show.interfaces.IShow;
 
 public interface ISpectator {
     String getFirstName();
